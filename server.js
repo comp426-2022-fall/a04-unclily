@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 
-import { roll } from "../lib/roll.js"
+import { roll } from "./lib/roll.js"
 import minimist from "minimist";
 import express from 'express';
 
 const args = minimist(process.argv.slice(2));
 const app = express();
-//const port = 5000;
 const port = args.port || 5000;
 
 app.use(express.json());
