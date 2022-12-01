@@ -11,10 +11,9 @@ const port = args.port || 5000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-//
-if(args.port != null){
-	port = args.port
-}
+// if(args.port != null){
+// 	port = args.port
+// }
 
 app.get('/app/', (req, res) => {
     res.status(200).send('200 OK');
