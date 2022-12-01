@@ -23,9 +23,9 @@ app.get('/app/roll', (req, res) => {
 });
 
 app.post('/app/roll', (req, res) => {
-    sides = parseInt(req.body.sides);
-    dice = parseInt(req.body.dice);
-    rolls = parseInt(req.body.rolls);
+    let sides = parseInt(req.body.sides);
+    let dice = parseInt(req.body.dice);
+    let rolls = parseInt(req.body.rolls);
     res.send(roll(sides, dice, rolls));
 });
 
